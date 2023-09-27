@@ -6,13 +6,14 @@ html, body{
 .logoimg {
     width: 64px;
     height: 64px;
+    position: relative;
+    left: 10px;
 }
 
 .navlinks a{
-    padding: 8px;
+    padding: 12px;
     text-decoration: none;
     color: brown;
-
 }
 
 .navlinks a:hover{
@@ -20,9 +21,12 @@ html, body{
 }
 
 .navbar {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    background-color: white;
     border-bottom: 1px #333 solid;
+    margin-top: auto;
+    position: fixed;
 }
 
 .banner {
@@ -45,4 +49,42 @@ html, body{
 
 h1 {
     color: white;
+}
+
+.hrr {
+    position: relative;
+    top: 320px;
+    border: none;
+    height: 1px;
+    color: #333;
+}
+
+.lorem {
+    position: relative;
+    top: 320px;
+    text-align: center;
+    color: black;
+    width: 70%;
+    margin: auto;
+}
+
+.lorem h3 {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.lorem2 {
+    position: relative;
+    top: 340px;
+    text-align: center;
+    color: black;
+    width: 78%;
+    margin: auto;
+}
+
+.button {
+    position: relative;
+    top: 340px;
+    border-radius: 3px;
+    text-align: center;
 }
