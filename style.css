@@ -1,0 +1,48 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.logoimg {
+    width: 64px;
+    height: 64px;
+}
+
+.navlinks a{
+    padding: 8px;
+    text-decoration: none;
+    color: brown;
+
+}
+
+.navlinks a:hover{
+    color: tomato; 
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px #333 solid;
+}
+
+.banner {
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1563874093519-ca5eda5cd776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80");
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.banner-container {
+    width: 80%;
+    margin: auto;
+    padding: 300px 0 0 0;
+}
+
+.banner-container h5 {
+    color: antiquewhite;
+}
+
+h1 {
+    color: white;
+}
