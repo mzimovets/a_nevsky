@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -10,14 +11,14 @@ html, body{
     left: 10px;
 }
 
-.navlinks a{
+.navlinks a {
     padding: 12px;
     text-decoration: none;
     color: brown;
 }
 
-.navlinks a:hover{
-    color: tomato; 
+.navlinks a:hover {
+    color: tomato;
 }
 
 .navbar {
@@ -34,7 +35,7 @@ html, body{
     background-image: url("https://images.unsplash.com/photo-1563874093519-ca5eda5cd776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80");
     background-position: center center;
     background-size: cover;
-    
+
 }
 
 .banner-container {
@@ -51,17 +52,24 @@ h1 {
     color: white;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 .hrr {
-    position: relative;
-    top: 320px;
+    /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
+    /* position: relative;
+    top: 320px; */
     border: none;
     height: 1px;
     color: #333;
 }
 
 .lorem {
-    position: relative;
-    top: 320px;
+    /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
+    /* position: relative;
+    top: 320px; */
     text-align: center;
     color: black;
     width: 70%;
@@ -74,8 +82,9 @@ h1 {
 }
 
 .lorem2 {
-    position: relative;
-    top: 340px;
+    /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
+    /* position: relative;
+    top: 340px; */
     text-align: center;
     color: black;
     width: 78%;
@@ -83,8 +92,19 @@ h1 {
 }
 
 .button {
-    position: relative;
-    top: 340px;
-    border-radius: 3px;
+    /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
+    /* position: relative;
+    top: 340px; */
+    /* border-radius: 3px; -- Сейчас по элемент с классом Button занимает 100% экрана. */
     text-align: center;
+    margin: 2rem;
+    /*margin: 2rem; - Добавляем отступ, чтобы блок с кнопкой отходил от соновного текста lorem ipsum*/
+}
+
+.button a {
+    padding: 1rem;
+    /*padding: 1rem; - Добавляем отступ чтобы увеличить расстояние границ самой кнопки от текста внутри кнопки*/
+    background-color: rgb(221, 88, 36);
+    color: white;
+    border-radius: 3px;
 }
