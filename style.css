@@ -88,3 +88,11 @@ h1 {
     border-radius: 3px;
     text-align: center;
 }
+
+.shedule-container {
+    height: 70vh;
+    background-color: rgb(252, 238, 220);
+    position: relative;
+    top: 380px;
+    text-align: center;
+}
