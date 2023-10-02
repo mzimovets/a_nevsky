@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+
 }
 
 .logoimg {
@@ -28,6 +30,7 @@ body {
     border-bottom: 1px #333 solid;
     margin-top: auto;
     position: fixed;
+    z-index: 5;
 }
 
 .banner {
@@ -66,6 +69,12 @@ h1 {
     color: #333;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .lorem {
     /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
     /* position: relative;
@@ -91,26 +100,88 @@ h1 {
     margin: auto;
 }
 
+.a-button {
+    color: white;
+    text-decoration: none;
+    /* width: 200px; */
+    margin: auto;
+    padding: 16px;
+    background-color: rgb(221, 88, 36);
+}
 .button {
     /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
     /* position: relative;
     top: 340px; */
     /* border-radius: 3px; -- Сейчас по элемент с классом Button занимает 100% экрана. */
     text-align: center;
-}
-
-.shedule-container {
-    height: 70vh;
-    background-color: rgb(252, 238, 220);
-    position: relative;
-    top: 380px;
-    text-align: center;
-}
-
-.button a {
-    padding: 1rem;
-    /*padding: 1rem; - Добавляем отступ чтобы увеличить расстояние границ самой кнопки от текста внутри кнопки*/
-    background-color: rgb(221, 88, 36);
-    color: white;
+    
     border-radius: 3px;
+    
+    /* margin-top: 20px; */
+
+}
+
+.a-button :hover {
+    background-color: #ba5100;
+}
+
+
+.schedule {
+    background-color: rgb(255, 235, 209);
+}
+
+.schedule h4{
+    text-align: center;
+    padding: 15px;
+}
+
+.schedule-container {
+    width: 85%;
+    margin: auto;
+    display: flex; /*для того, чтобы элементы были по порядку в строку*/
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+@media(max-width:640px) {
+    .schedule-container {
+        flex-direction: column;
+    }
+}
+
+.schedule-card {
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 10px #333; /*тень карточки (тень по x, y; размытие; цвет)*/
+    border-radius: 3px;
+    margin: 16px;
+    padding: 10px;
+}
+
+.schedule-card-header {
+    display: flex;
+}
+
+.schedule-card-header p{
+    margin: 25px;
+}
+
+.schedule-card-header h5{
+    margin: 25px;
+    font-weight: 700;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+ul {
+    padding: 0;
+    margin-left: 25px;
+}
+
+.schedule-card-time {
+    font-weight: 500;
+    color: rgb(26, 26, 25);
 }
