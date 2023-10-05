@@ -48,7 +48,8 @@ body {
 }
 
 .banner-container h5 {
-    color: antiquewhite;
+    color: #C9A885;
+    
 }
 
 h1 {
@@ -129,7 +130,7 @@ h1 {
 
 
 .schedule {
-    background-color: rgb(255, 235, 209);
+    background-color: #F7F4F1;
 }
 
 .schedule h4 {
@@ -190,13 +191,18 @@ ul {
     color: rgb(26, 26, 25);
 }
 
+.h-relics {
+    background-color: #FFFFFF;
+}
+
 .relics {
-    background-color: rgb(227, 212, 194);
     display: flex;
     /* display: flex; -для того, чтобы элементы были по порядку в строку*/
-    width: 85%;
+    width: 100%;
     margin: auto;
     justify-content: space-between;
+    text-align: center;
+    background-color: #FFFFFF;
 }
 
 .relics-img {
@@ -215,10 +221,49 @@ ul {
 
     /* Добавил отступ padding и фон блокам, чтобы тебе было понятнее как располагаются элементы внутри блоков relics-container и как relics-container блоки расположены внутри блока relics */
     padding: 16px;
-    background-color: aliceblue;
+    margin: auto;
+    width: 85%;
+    background-color: #FFFFFF;
 }
+
 
 .relics-container h6 {
     margin: 13px;
     text-align: center;
+    color: #1E2839;
 }
+
+.h-online-note {
+    width: 85%;
+    margin: auto;
+    background-color: #F7F4F1;
+    
+}
+
+.h-online-note h4 {
+    text-align: left;
+    margin-left: 92px;
+    padding-top: 40px;
+    
+}
+
+.online-note {
+    width: 85%;
+    margin-left: 100px;
+    background-color: #F7F4F1;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.on-note-img {
+    width: 244px;
+    height: 244px;
+    /* margin-left: 60px;  ???*/
+    position: relative; /* в этом случае есть смысл использовать это? */
+    bottom: 50px;
+
+}
+
+
