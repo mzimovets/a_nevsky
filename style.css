@@ -185,3 +185,32 @@ ul {
     font-weight: 500;
     color: rgb(26, 26, 25);
 }
+
+.relics {
+    background-color: rgb(227, 212, 194);
+}
+
+.relics-img {
+    width: 164px;
+    height: 164px;
+}
+
+.relics-container {
+    /* width: 85%;
+    display: flex;
+    margin: 16px;
+    justify-content: space-between;
+    text-align: center;*/
+
+
+
+    width: 85%;
+    margin: auto;
+    display: flex; /*для того, чтобы элементы были по порядку в строку*/
+    justify-content: space-between;
+}
+
+.relics-container h6 {
+    margin: 13px;
+    text-align: center;
+}
