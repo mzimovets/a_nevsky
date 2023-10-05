@@ -75,6 +75,7 @@ h1 {
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .lorem {
     /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
     /* position: relative;
@@ -108,15 +109,16 @@ h1 {
     padding: 16px;
     background-color: rgb(221, 88, 36);
 }
+
 .button {
     /* Стиль position relative не нужен, так как была ошибка в закрывающем теге </div> */
     /* position: relative;
     top: 340px; */
     /* border-radius: 3px; -- Сейчас по элемент с классом Button занимает 100% экрана. */
     text-align: center;
-    
+
     border-radius: 3px;
-    
+
     /* margin-top: 20px; */
 
 }
@@ -130,7 +132,7 @@ h1 {
     background-color: rgb(255, 235, 209);
 }
 
-.schedule h4{
+.schedule h4 {
     text-align: center;
     padding: 15px;
 }
@@ -138,7 +140,8 @@ h1 {
 .schedule-container {
     width: 85%;
     margin: auto;
-    display: flex; /*для того, чтобы элементы были по порядку в строку*/
+    display: flex;
+    /* display: flex; для того, чтобы элементы были по порядку в строку*/
     justify-content: space-between;
     overflow: hidden;
 
@@ -152,7 +155,8 @@ h1 {
 
 .schedule-card {
     background-color: antiquewhite;
-    box-shadow: 5px 5px 10px #333; /*тень карточки (тень по x, y; размытие; цвет)*/
+    box-shadow: 5px 5px 10px #333;
+    /* box-shadow: тень карточки (тень по x, y; размытие; цвет)*/
     border-radius: 3px;
     margin: 16px;
     padding: 10px;
@@ -162,18 +166,18 @@ h1 {
     display: flex;
 }
 
-.schedule-card-header p{
+.schedule-card-header p {
     margin: 25px;
 }
 
-.schedule-card-header h5{
+.schedule-card-header h5 {
     margin: 25px;
     font-weight: 700;
 }
 
 li {
     list-style-type: none;
-    
+
 }
 
 ul {
@@ -188,6 +192,11 @@ ul {
 
 .relics {
     background-color: rgb(227, 212, 194);
+    display: flex;
+    /* display: flex; -для того, чтобы элементы были по порядку в строку*/
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .relics-img {
@@ -196,6 +205,7 @@ ul {
 }
 
 .relics-container {
+    /* Вот эти стили внизу, которые закомментированы нормальные, просто ты перепутал что их нужно добавлять к блоку выше (блок с классом relics) */
     /* width: 85%;
     display: flex;
     margin: 16px;
@@ -203,11 +213,9 @@ ul {
     text-align: center;*/
 
 
-
-    width: 85%;
-    margin: auto;
-    display: flex; /*для того, чтобы элементы были по порядку в строку*/
-    justify-content: space-between;
+    /* Добавил отступ padding и фон блокам, чтобы тебе было понятнее как располагаются элементы внутри блоков relics-container и как relics-container блоки расположены внутри блока relics */
+    padding: 16px;
+    background-color: aliceblue;
 }
 
 .relics-container h6 {
